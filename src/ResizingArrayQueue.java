@@ -52,7 +52,7 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
         n--;
         first++;
         if(first == q.length) first = 0;
-        if(n > 0  && n = q.length/4) resize(q.length/2);
+        if(n > 0  && n == q.length/4) resize(q.length/2); // se tiver só um sinal de igualdade, coloquem dois é pra comparar
         return item;
     }
 

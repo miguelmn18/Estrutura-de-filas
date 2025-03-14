@@ -110,7 +110,7 @@ import java.util.regex.Pattern;
  *  <p>
  *  <b>Reading a sequence of values of the same type from standard input.</b>
  *  You can use the following methods to read a sequence numbers, strings,
- *  or booleans (all of the same type) from standard input:
+ *  or booleans (same type) from standard input:
  *  <ul>
  *  <li> {@link #readAllDoubles()}
  *  <li> {@link #readAllInts()}
@@ -128,7 +128,7 @@ import java.util.regex.Pattern;
  *  The {@code readAll()} method reads all remaining input on standard
  *  input and returns it as a string.
  *  <p>
- *  As an example, the following code fragment reads all of the remaining
+ *  As an example, the following code fragment reads  remaining
  *  tokens from standard input and returns them as an array of strings.
  *  <pre>
  *  String[] words = StdIn.readAllStrings();
@@ -142,7 +142,7 @@ import java.util.regex.Pattern;
  *  <li> {@code StdIn} is a set of static methods and reads
  *       reads input from only standard input. It is suitable for use before
  *       a programmer knows about objects.
- *       See {@link In} for an object-oriented version that handles
+ *       See {@link } for an object-oriented version that handles
  *       input from files, URLs,
  *       and sockets.
  *  <li> {@code StdIn} uses whitespace as the delimiter between tokens.
@@ -220,7 +220,7 @@ public final class StdIn {
     /**
      * Returns true if standard input is empty (except possibly for whitespace).
      * Use this method to know whether the next call to {@link #readString()},
-     * {@link #readDouble()}, etc will succeed.
+     * {@link #readDouble()},  will succeed.
      *
      * @return <tt>true</tt> if standard input is empty (except possibly
      *         for whitespace); <tt>false</tt> otherwise

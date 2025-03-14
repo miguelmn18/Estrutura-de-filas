@@ -170,7 +170,7 @@ public final class StdOut {
     /**
      * Prints a byte to standard output and then terminates the line.
      * <p>
-     * To write binary data, see {@link BinaryStdOut}.
+     * To write binary data, see {@link }.
      *
      * @param x the byte to print
      */

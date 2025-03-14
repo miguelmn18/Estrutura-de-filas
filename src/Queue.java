@@ -22,7 +22,7 @@ public class Queue <Item> implements  Iterable <Item> {
 
     public boolean isEmpty() {
         // o metodo boolean só retorna true ou false
-        return first = null;
+        return first == null;
 
     }
 
