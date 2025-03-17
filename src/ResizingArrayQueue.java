@@ -4,12 +4,11 @@ import java.util.NoSuchElementException;
 
 public class ResizingArrayQueue <Item> implements Iterator <Item> {
     private static final int INIT_CAPACITY = 8;
-
     private Item[] q;
     private int n;
     private int first;
     private int last;
-
+    @SuppressWarnings("unchecked")
     public ResizingArrayQueue() {
         q = (Item[]) new Object[INIT_CAPACITY];
         n = 0;
@@ -26,9 +25,14 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
 
     }
 
+    @SuppressWarnings("unchecked")//suprime alerta do java por conta do cast(do objeto para item)
+    /*
+     @SuppressWarnings("unchecked") esse marcador suprime os alertar do java
+    usado para "dizer" ao compilador que você está ciente do risco(codigo pode contér risco ou insegurança)
+    */
     private void resize(int capacity) {
         assert capacity >= n;
-        Item[] copy = (Item[]) new Object[capacity];
+        Item[] copy = (Item[]) new Object[capacity];//por fazer esse cast o java informa que a operação pode ser insegura
         for (int i = 0; i < n; i++) {
             copy[i] = q[(first + i) % q.length];
         }
@@ -52,7 +56,7 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
         n--;
         first++;
         if(first == q.length) first = 0;
-        if(n > 0  && n == q.length/4) resize(q.length/2); // se tiver só um sinal de igualdade, coloquem dois é pra comparar
+        if(n > 0  && n == q.length/4) resize(q.length/2);
         return item;
     }
 
@@ -82,12 +86,12 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
         public boolean hasNext() {
             return i < n;
         }
-         public Item next(){
+        public Item next(){
             if(!hasNext ()) throw new NoSuchElementException();
             Item item = q[(i + first) % q.length];
             i++;
             return item;
-         }
+        }
 
     }
 
@@ -99,6 +103,6 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
             else if (!queue.isEmpty()) StdOut.print(queue.dequeue() + " ");
 
         }
-        StdOut.println ("(" + queue.size() + "left on queue )");
+        StdOut.println ("(" + queue.size() + " left on queue )");
     }
 }

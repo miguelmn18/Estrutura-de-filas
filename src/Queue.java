@@ -92,7 +92,7 @@ public class Queue <Item> implements  Iterable <Item> {
     }
 
     public static void main (String [] args) { // se aqui der erro no StdIn ou StdOut ou não implementou ou classe StdIn e StdOut
-                                                //precisa ser ajustada
+        //precisa ser ajustada
         Queue<String> queue = new Queue<String>();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
@@ -102,6 +102,7 @@ public class Queue <Item> implements  Iterable <Item> {
                 StdOut.print(queue.dequeue() + " ");
 
         }
-        StdOut.println ("(" + queue.size() + " left on queue) ");
+        StdOut.println ("("+ queue.size() + " left on queue) ");
+
     }
 }
