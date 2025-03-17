@@ -94,7 +94,7 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
         }
 
     }
-
+i
     public static void main (String [] args) {
         ResizingArrayQueue<String> queue = new ResizingArrayQueue<>();
         while (!StdIn.isEmpty()) {

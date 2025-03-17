@@ -1,7 +1,7 @@
 /******************************************************************************
  *  Compilation:  javac StdIn.java
  *  Execution:    java StdIn   (interactive test of basic functionality)
- *  Dependencies: none
+ *  Dependencies: none.
  *
  *  Reads in data of various types from standard input.
  *

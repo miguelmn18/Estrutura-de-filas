@@ -53,7 +53,7 @@ import java.util.Locale;
  *  see <a href="http://introcs.cs.princeton.edu/15inout">Section 1.5</a> of
  *  <em>Introduction to Programming in Java: An Interdisciplinary Approach</em>
  *  by Robert Sedgewick and Kevin Wayne.
- *
+ * igi
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */

@@ -2,7 +2,7 @@ import org.w3c.dom.Node;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or .
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Queue <Item> implements  Iterable <Item> {
     private Node<Item> first;
