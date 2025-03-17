@@ -314,6 +314,7 @@ public final class StdIn {
      * @return the next <tt>String</tt>
      * @throws NoSuchElementException if standard input is empty
      */
+
     public static String readString() {
         return scanner.next();
     }
@@ -325,6 +326,7 @@ public final class StdIn {
      * @throws NoSuchElementException if standard input is empty
      * @throws InputMismatchException if the next token cannot be parsed as an <tt>int</tt>
      */
+
     public static int readInt() {
         return scanner.nextInt();
     }
@@ -336,6 +338,7 @@ public final class StdIn {
      * @throws NoSuchElementException if standard input is empty
      * @throws InputMismatchException if the next token cannot be parsed as a <tt>double</tt>
      */
+
     public static double readDouble() {
         return scanner.nextDouble();
     }
@@ -489,6 +492,7 @@ public final class StdIn {
      * @throws InputMismatchException if any token cannot be parsed as an <tt>int</tt>
      * @deprecated Replaced by {@link #readAllInts()}.
      */
+    @Deprecated
     public static int[] readInts() {
         return readAllInts();
     }
@@ -500,6 +504,7 @@ public final class StdIn {
      * @throws InputMismatchException if any token cannot be parsed as a <tt>double</tt>
      * @deprecated Replaced by {@link #readAllDoubles()}.
      */
+    @Deprecated
     public static double[] readDoubles() {
         return readAllDoubles();
     }
@@ -509,6 +514,7 @@ public final class StdIn {
      * @return all remaining tokens, as an array of strings
      * @deprecated Replaced by {@link #readAllStrings()}.
      */
+    @Deprecated
     public static String[] readStrings() {
         return readAllStrings();
     }
