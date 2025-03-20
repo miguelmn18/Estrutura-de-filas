@@ -97,7 +97,7 @@ public class Queue <Item> implements  Iterable <Item> {
             String item = StdIn.readString();
             if (!item.equals("-"))
                 queue.enqueue(item);
-            else if (queue.isEmpty()) StdOut.print(queue.dequeue() + " ");
+            else if (!queue.isEmpty()) StdOut.print(queue.dequeue() + " ");
 
         }
         StdOut.println ("("+ queue.size() + " left on queue) ");
