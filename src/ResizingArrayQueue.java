@@ -8,6 +8,7 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
     private int n;
     private int first;
     private int last;
+
     @SuppressWarnings("unchecked")
     public ResizingArrayQueue() {
         q = (Item[]) new Object[INIT_CAPACITY];
@@ -49,7 +50,7 @@ public class ResizingArrayQueue <Item> implements Iterator <Item> {
 
     }
 
-    public Item dequeue() { //aqui tem um erro no qual eu não identificar
+    public Item dequeue() {
         if (isEmpty()) throw new NoSuchElementException("Queue underflow");
         Item item = q[first];
         q[first] = null;

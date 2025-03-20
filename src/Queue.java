@@ -91,8 +91,7 @@ public class Queue <Item> implements  Iterable <Item> {
         }
     }
 
-    public static void main (String [] args) { // se aqui der erro no StdIn ou StdOut ou não implementou ou classe StdIn e StdOut
-        //precisa ser ajustada
+    public static void main (String [] args) {
         Queue<String> queue = new Queue<String>();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
